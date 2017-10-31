@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'TodoList';
   items = [
     { name: 'Home', link: '/' },
-    { name: 'TodoList', link: '/todolist' }
+    { name: 'Todo', link: '/todo' }
   ]
 
   constructor (
@@ -18,6 +18,6 @@ export class AppComponent {
   ) {}
 
   goTo(link: string): void {
-    // this.router.navigate([link]);
+    this.router.navigate([link]);
   }
 }

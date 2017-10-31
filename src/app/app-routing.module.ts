@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 // Components
 import { HomeComponent } from  './components/home/home.component';
+import {TodoComponent } from  './components/todo/todo.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,10 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent
   },
+  {
+    path: 'todo',
+    component: TodoComponent
+  },
 ];
 
 @NgModule({
@@ -24,5 +29,6 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 export const RoutedComponents = [
-  HomeComponent
+  HomeComponent,
+  TodoComponent
 ];
